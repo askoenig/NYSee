@@ -2,6 +2,8 @@ class User < ApplicationRecord
   has_many :visits
   has_many :destinations, through: :visits
 
+  validates :user_name, uniqueness: true
+
   has_secure_password
 
   attr_reader :password
@@ -21,6 +23,7 @@ class User < ApplicationRecord
     salt = password_digest[0..28]
     hashed = BCrypt::Engine::hash_secret(password, salt)
     return nil unless (salt + hashed) == self.password_digest
+    self
   end
 
 end

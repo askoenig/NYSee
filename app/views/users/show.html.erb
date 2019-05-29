@@ -2,5 +2,10 @@
 
 <%= @user.first_name %> <%= @user.last_name %><br>
 Age: <%= @user.age %><br>
-Usrname: <%= @user.username %><br>
+Username: <%= @user.user_name %><br>
 <%= @user.email %><br>
+
+<%= link_to "Create a New Visit", new_visit_path %><br>
+<br>
+
+<%= link_to "Log out", session_path, method: :delete %>
