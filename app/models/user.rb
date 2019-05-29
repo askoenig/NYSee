@@ -1,4 +1,7 @@
 class User < ApplicationRecord
+  has_many :visits
+  has_many :destinations, through: :visits
+
   has_secure_password
 
   attr_reader :password
