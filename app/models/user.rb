@@ -1,6 +1,8 @@
 class User < ApplicationRecord
   has_many :visits
+  has_many :custom_visits
   has_many :destinations, through: :visits
+  has_many :custom_destinations, through: :custom_visits
 
   validates :user_name, uniqueness: true
 

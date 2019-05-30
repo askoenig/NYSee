@@ -1,0 +1,11 @@
+<h1>Create a New Visit!</h1><br>
+
+<h2>Choose a Destination:</h2>
+<%= form_for @visit do |f| %>
+<%= f.collection_select :destination_id, Destination.all, :id, :name %>
+<%= f.submit %>
+<% end %><br>
+<br>
+
+
+<%= link_to "Or Create Your Own Destination", new_custom_destination_path %>

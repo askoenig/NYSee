@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  root 'application#hello'
+  resources :custom_visits
+  resources :custom_destinations
   resources :creators
   resources :visits
   resources :creations

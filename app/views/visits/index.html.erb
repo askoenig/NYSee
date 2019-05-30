@@ -1,0 +1,7 @@
+<h1>Destinations</h1>
+<% @visits.each do |v| %>
+<li><%= link_to v.destination.name, destination_path(v) %></li>
+<% end %>
+<% @custom_visits.each do |v| %>
+<li><%= link_to v.custom_destination.name, custom_destination_path(v) %></li>
+<% end %>

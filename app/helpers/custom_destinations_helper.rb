@@ -1,0 +1,2 @@
+module CustomDestinationsHelper
+end
