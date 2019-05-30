@@ -1,3 +1,22 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+  color: #333333;
+  display: block;
+  border:1px solid;
+  width:80%;
+  margin:0 auto;
+  text-align: center
+}
+
+/* line 7, /Users/andrewkoenig/Development/code/NYSee/app/assets/stylesheets/users.scss */
+.user_profile {
+  border: 1px solid #22eeff;
+  background-color: antiquewhite;
+  padding: 30px;
+  display: block;
+  width:30%;
+  margin:0 auto;
+
+}

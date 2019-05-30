@@ -17,7 +17,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
       unless session[:user_id] == @user.id
-        flash[:error] = "You are not authorized to access that page, bitch"
+        flash[:error] = "You are not authorized to access that page."
         redirect_to new_session_path
       end
   end

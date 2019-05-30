@@ -1,4 +1,6 @@
 <h1>Destination Details</h1>
+
+<div class="destination_display">
 <h3><label>Name:</label></h3>
 <%= @destination.name %><br>
 <h3><label>Address:</label></h3>
@@ -7,3 +9,6 @@
 <%= @destination.destination_type %><br>
 <h3><label>Year Created:</label></h3>
 <%= @destination.year_created %><br>
+</div>
+<br>
+<%= button_to "Back To My Profile", user_path(session[:user_id]), :method => "get" %>

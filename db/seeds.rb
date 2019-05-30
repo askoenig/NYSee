@@ -16,5 +16,6 @@ Destination.create(name: "The Empire State Building", address: "20 W 34th St, Ne
 Destination.create(name: "Pennsylvania Station", address: "New York, NY 10119", year_created: 1910, destination_type: "Railroad Station")
 Destination.create(name: "Grand Central Terminal", address: "89 E 42nd St, New York, NY 10017", year_created: 1913, destination_type: "Commuter Rail Terminal")
 Destination.create(name: "Cleopatra's Needle", address: "E 81st St, New York, NY 10024", year_created: 1450, destination_type: "Historic Landmark")
-Destination.create(name: "Brooklyn Bridge", address: "Brooklyn Bridge, New York, NY 10038", year_created: 1869, destination_type: "Historic Landmark")
+Destination.create(name: "The Flatiron Building", address: "175 Fifth Avenue", year_created: 1902, destination_type: "Historic Landmark")
+Destination.create(name: "Madison Square Garden", address: "4 Pennsylvania Plaza", year_created: 1968, destination_type: "Arena")
 Destination.create(name: "Brooklyn Bridge", address: "Brooklyn Bridge, New York, NY 10038", year_created: 1869, destination_type: "Historic Landmark")

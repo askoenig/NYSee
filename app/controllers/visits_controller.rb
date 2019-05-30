@@ -12,20 +12,20 @@ class VisitsController < ApplicationController
   def show
     @visit = Visit.find(params[:id])
       unless session[:user_id] == @visit.user_id
-        flash[:error] = "You are not authorized to access that page, bitch"
+        flash[:error] = "You are not authorized to access that page."
         redirect_to new_session_path
       end
   end
 
   def create
-    @visit = Visit.create(user_id: current_user.id, destination_id: visit_params[:destination_id])
+    @visit = Visit.create(user_id: current_user.id, destination_id: visit_params[:destination_id], review: visit_params[:review])
     redirect_to user_path(@visit.user_id)
   end
 
 private
 
   def visit_params
-    params.require(:visit).permit(:user_id, :destination_id)
+    params.require(:visit).permit(:user_id, :destination_id, :review)
   end
 
 end

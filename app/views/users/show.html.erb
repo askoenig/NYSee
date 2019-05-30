@@ -1,5 +1,6 @@
 <h1>Your NYSee Account</h1>
 
+<div class="user_profile">
 <%= @user.first_name %> <%= @user.last_name %><br>
 Age: <%= @user.age %><br>
 Username: <%= @user.user_name %><br>
@@ -9,5 +10,5 @@ Username: <%= @user.user_name %><br>
 <br>
 <%= link_to "All My Visits", visits_path %><br>
 <br>
-
-<%= link_to "Log out", session_path, method: :delete %>
+<%= button_to "Log Out", session_path, method: :delete %>
+</div>

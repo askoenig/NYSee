@@ -7,7 +7,7 @@ class CustomVisitsController < ApplicationController
   def show
     @custom_visit = CustomVisit.find(params[:id])
       unless session[:user_id] == @custom_visit.user_id
-        flash[:error] = "You are not authorized to access that page, bitch"
+        flash[:error] = "You are not authorized to access that page."
         redirect_to new_session_path
       end
   end

@@ -10,4 +10,6 @@
 <%= f.label :destination_type %>
 <%= f.text_field :destination_type %><br>
 <%= f.submit %>
-<% end %>
+<% end %><br>
+<br>
+<%= button_to "Back To My Profile", user_path(session[:user_id]), :method => "get" %>
