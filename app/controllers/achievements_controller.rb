@@ -1,3 +1,3 @@
 class AchievementsController < ApplicationController
-
+  
 end
