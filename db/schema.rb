@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_30_192116) do
+ActiveRecord::Schema.define(version: 2019_05_31_131450) do
+
+  create_table "achievements", force: :cascade do |t|
+    t.string "name"
+    t.string "img_url"
+    t.integer "user_id"
+  end
 
   create_table "creations", force: :cascade do |t|
     t.integer "destination_id"
