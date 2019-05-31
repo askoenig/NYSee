@@ -1,3 +1,10 @@
+<h1>Destinations!</h1>
+
 <% @destinations.each do |d| %>
 <li><%= link_to d.name, destination_path(d) %></li>
 <% end %>
+
+<%= button_to "Back To My Profile", user_path(session[:user_id]), :method => "get" %>
+
+<h3>Don't know where to start? Here's the most popular NYSee destination today: </h3>
+<h3><%= Destination.most_popular_destination %></h3>
