@@ -13,5 +13,9 @@ class Destination < ApplicationRecord
   end
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 001028144a2eb913248a6f68d422e25c34ad6f3c
 
 end
