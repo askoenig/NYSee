@@ -15,6 +15,7 @@ I built this project using:
 
 
 ### Rails Setup
+
 git clone 
 cd NYSee
 bundle install 
