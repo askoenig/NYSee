@@ -1,24 +1,42 @@
-# README
+### NYSEE
+Keep track of the New York City destinations you have visited or add your own custom destinations. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### VIDEO EXAMPLE
+Here's a link to a vid demo if you'd like to see the project in action:
 
-Things you may want to cover:
+https://youtu.be/6XThxZj6M3k
 
-* Ruby version
+### TECH
+I built this project using:
 
-* System dependencies
+- Ruby
+- Ruby on Rails
+- Vanilla CSS
 
-* Configuration
 
-* Database creation
+### Rails Setup
+git clone 
+cd NYSee
+bundle install 
+rails db:create db:migrate 
+rails s (start rails server) 
+Now you can should be able to go to the url endpoints
 
-* Database initialization
+### Creating A Rails Project
+The project was originally generated with these commands:
 
-* How to run the test suite
+- Create folder 
+mkdir best-app
 
-* Services (job queues, cache servers, search engines, etc.)
+- cd into that folder 
+cd best-app
 
-* Deployment instructions
+- Update Rails Version rails 
+v gem update rails
 
-* ...
+- Create new rails API with a PostgreSQL 
+database rails new my_api --api --database=postgresql 
+cd my_api 
+rails g scaffold Book title:string (etc)
+
+- Create a Git repo for Rails app
