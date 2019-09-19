@@ -17,10 +17,15 @@ I built this project using:
 ### Rails Setup
 
 git clone 
+
 cd NYSee
+
 bundle install 
+
 rails db:create db:migrate 
+
 rails s (start rails server) 
+
 Now you can should be able to go to the url endpoints
 
 ### Creating A Rails Project
